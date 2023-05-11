@@ -9,5 +9,8 @@
         name: apache2
         state: present
         update_cache: yes
-
+  - name: copy stuff
+    copy:
+    scr: index.html
+    dest: /var/www/html
 ...
