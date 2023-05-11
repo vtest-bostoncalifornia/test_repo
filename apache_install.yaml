@@ -1,0 +1,13 @@
+---
+
+- name: apache_install
+  hosts: all
+  become: true
+  tasks:
+  - name: Install apache httpd 
+    apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+...
